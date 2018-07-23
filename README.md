@@ -8,7 +8,24 @@ The data used in this project was collected from the Worldwide Patent Statistica
 
 Although it was impossible to add all data to this repository (in total it is about 400GB), some data was added to the [`data`](/data) directory.
 
-## Images
+## Requirements
+
+We use `R` as the primary language for performing econometric and statistical analysis. To reproduce the figures and analysis, [base `R`](https://www.r-project.org/) needs to be installed. Moreover, a small number of `R` packages are required to run the analysis. These can be installed by running the `requirements.R` script, which can be found at the root of the `PatentMap` directory. Therefore, from the terminal:
+```
+cd <path/to/PatentMap>
+Rscript requirements.R
+```
+Note that this installation script is written for Ubuntu.
+
+## Run analysis
+
+You can run the full analysis and generate the figures using the `main.R` script. This can be run within the `R` enviornment itself, or alternatively can be run from the terminal with the following commands:
+```
+cd <path/to/PatentMap>
+Rscript main.R
+``` 
+
+## Resulting images
 
 The objective of this repository is to produce a set of images that highlight the activity of patent applications in each region of Europe over time. The resulting images can be found in the [`images`](/images) directory. For example:
 
