@@ -49,3 +49,5 @@ if (length(newPackages) > 0) {
       repos = cranRepo)
   }
 }
+
+print("SUCCESS: Successfully installed all required packages from CRAN!")
