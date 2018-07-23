@@ -39,9 +39,8 @@ getGeoData <- function() {
               paste('FRA', 1:5, sep = ''), 'PT20', 'PT30')
   
   # Make the geodata ready for ggplot
-  gd3 <- fortify(NUTS3, region = "nuts_id") %>% 
-    filter(!str_sub(id, 1, 4) %in% remote,
-           !str_sub(id, 1, 2) == "AL")
+  gd3 <- fortify(NUTS3, region = "nuts_id") %>%
+    subset(substr(x = id, start = 1, stop = 2) != "AL")
   
   # Add neighbouring countries
   f <- tempfile()

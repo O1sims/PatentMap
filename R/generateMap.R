@@ -59,7 +59,7 @@ generateMap <- function(neigh, bord, gd3) {
               size = 0.5) +
     theme(legend.position = "none")
   
-  # Save Europe image
+  # Save Europe patent map
   getwd() %>%
     paste0("/images/patent-map.png") %>%
     ggsave(
